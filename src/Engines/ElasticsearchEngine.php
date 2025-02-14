@@ -125,7 +125,6 @@ class ElasticsearchEngine extends Engine
     {
         $params = [
             'index' => $builder->model->searchableAs(),
-            'type' => get_class($builder->model),
             'body' => [
                 'query' => [
                     'bool' => [
